@@ -1,0 +1,402 @@
+---
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Food Recommender Demo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,200;0,400;1,300&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="assets/MF-LOGO-WHITE-2x.png" alt="" />
+      <svg
+        width="2"
+        height="62"
+        viewBox="0 0 2 62"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <line x1="1" x2="1" y2="62" stroke="white" stroke-width="1"></line>
+      </svg>
+      <h1>Food Recommender Chatbot</h1>
+    </header>
+    <main>
+      <section>
+        <div class="introduction">
+          <div class="explanation">
+            <h3>Explanation</h3>
+            <p>
+              The chatbot is developed to provide in time personalized food
+              suggestions. The interaction starts with understanding user
+              preferences regarding food allergies and constraints, dish likes,
+              and dislikes. By analyzing all those information, it proactively
+              generates what's most relevant recipe items to the current user's
+              food recipes in addition to a healthier alternative with a
+              nutrition explanation.
+            </p>
+
+            <div class="links">
+              <img src="assets/paper.jpg" alt="" />
+              <a
+                class="links_attr"
+                href="https://www.researchgate.net/publication/363056279_Nudging_Towards_Health_in_a_Conversational_Food_Recommender_System_Using_Multi-Modal_Interactions_and_Nutrition_Labels"
+              >
+                Castiglia, Giovanni & El Majjodi, Ayoub & Calò, Federica &
+                Deldjoo, Yashar & Narducci, Fedelucio & Starke, Alain &
+                Trattner, Christoph. (2022). Nudging Towards Health in a
+                Conversational Food Recommender System Using Multi-Modal
+                Interactions and Nutrition Labels.
+              </a>
+              <svg width="98" height="96" xmlns="http://www.w3.org/2000/svg"
+                ><path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+                  fill="#fff"></path></svg
+              >
+              <a class="links_github" href=" https://github.com/giocast/MMCFRS">
+                https://github.com/giocast/MMCFRS</a
+              >
+
+              <p class="attr_left">
+                Contact: PhD Candidate Ayoub el Majjodi, SFI MediaFutures, UiB:
+                Ayoub.Majjodi@uib.no
+              </p>
+            </div>
+          </div>
+          <div class="video">
+            <h3>VIDEO</h3>
+            <div style="padding:216.22% 0 0 0;position:relative;">
+              <iframe
+                src="https://player.vimeo.com/video/795538683?h=69f76a4874&badge=0&autopause=0&player_id=0&app_id=58479"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Food Recommender Demo"></iframe>
+            </div><script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Detailed Explanation</h2>
+        <div class="guide">
+          <div class="guide_step">
+            <div class="step_expl">
+              <h3># Step One</h3>
+              <p>The bot prompts you to choose your food category</p>
+            </div>
+            <img src="assets/first.png" alt="" />
+          </div>
+          <div class="guide_step">
+            <div class="step_expl">
+              <h3># Step Two</h3>
+              <p>
+                The bot prompts you to list any preferences or food
+                restrictions.
+              </p>
+            </div>
+            <img src="assets/second.png" alt="" />
+          </div>
+          <div class="guide_step">
+            <div class="step_expl">
+              <h3># Step three</h3>
+              <p>
+                The bot prompts you to list any constraints, and adjusts the
+                recommendation thereafter.
+              </p>
+            </div>
+            <img src="assets/third.png" alt="" />
+          </div>
+          <div class="guide_step">
+            <div class="step_expl">
+              <h3># Step Four</h3>
+              <p>
+                Step four starts with the preference elicitation step, it asks
+                you to like or skip at least five suggested dishes.
+              </p>
+            </div>
+            <img src="assets/fourth.png" alt="" />
+          </div>
+          <div class="guide_step">
+            <div class="step_expl">
+              <h3># Step Five</h3>
+              <p>
+                The bot delivers your personalised food recommendation with an
+                alternative healthiest option. It then asks for user feedback.
+              </p>
+            </div>
+            <img src="assets/fifth.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <div class="footer_main">
+        <img src="/assets/MF-LOGO-WHITE-2x.png" alt="" />
+        <h3>Demo brought to you by SFI MediaFutures</h3>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style>
+  .footer_main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem 0 8rem 0;
+  }
+  .footer_main > img {
+    width: 200px;
+  }
+  .footer_main > h3 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+  }
+  :root {
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  a {
+    color: #ffffff;
+    font-family: "K2D";
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: 1rem;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    height: 4rem;
+  }
+
+  header > img {
+    height: 2rem;
+    margin: 0 1rem 0 0;
+  }
+
+  header > svg {
+    margin: 3rem 0 3rem 0;
+  }
+
+  header > h1 {
+    margin: 0 0 0 1rem;
+  }
+
+  h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  body {
+    background-color: #212121;
+  }
+
+  .sep {
+    border: 2px solid #ffffff;
+    height: 100%;
+  }
+  .image_container {
+  }
+
+  .introduction {
+    margin: 0 0.1rem 2rem 0.1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-flow: row;
+    align-content: center;
+    justify-items: center;
+    gap: 10px;
+  }
+
+  .guide {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-flow: row;
+    align-content: center;
+    justify-items: center;
+    gap: 10px;
+  }
+
+  .guide_step {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+  }
+
+  .guide_step > img {
+    margin: -1.6rem 0 0 0;
+    width: 126%;
+  }
+
+  .step_expl {
+    height: 120px;
+    width: 100%;
+    background: #2d2b2e;
+    border: 1px solid #4c4b50;
+    border-radius: 12px;
+  }
+
+  .step_expl > h3 {
+    margin: 0.2rem 0 0 0.3rem;
+  }
+  .step_expl > p {
+    margin: 0.2rem 0 0 0.3rem;
+  }
+  .video {
+    max-width: 350px;
+    width: 100%;
+    min-width: 250px;
+  }
+  .video > h3 {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .explanation {
+    width: 100%;
+    min-width: 250px;
+  }
+
+  .explanation > h3 {
+    text-align: center;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
+  }
+
+  .links > img {
+    align-self: center;
+    justify-self: center;
+    width: 7rem;
+    grid-row: 1/1;
+    grid-column: 1/1;
+	margin: .1rem 0 1rem 0;
+  }
+
+  .links > svg {
+    justify-self: center;
+    align-self: center;
+    grid-row: 3/3;
+    grid-column: 1/1;
+  }
+
+  .links_attr {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    justify-self: center;
+    align-self: center;
+    grid-row: 2/2;
+    grid-column: 1/1;
+  }
+
+  .links_github {
+    color: #ffffff;
+    text-decoration: none;
+    justify-self: center;
+    align-self: center;
+    grid-row: 4/4;
+    grid-column: 1/1;
+  }
+
+  .attr_left {
+    font-size: 12px;
+    text-align: center;
+    grid-column: 1/1;
+  }
+
+  .attr_right {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 550px) {
+    h1 {
+      font-size: 25px;
+    }
+    .introduction {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .links {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(2, auto);
+    }
+    .attr_left {
+      font-size: 12px;
+      text-align: center;
+      grid-column: 1/3;
+    }
+    .links > img {
+      align-self: center;
+      justify-self: center;
+      width: 7rem;
+      grid-row: 1/1;
+      grid-column: 1/1;
+    }
+
+    .links > svg {
+      justify-self: center;
+      align-self: center;
+      grid-row: 1/1;
+      grid-column: 2/2;
+    }
+
+    .links_attr {
+      justify-self: center;
+      align-self: center;
+      grid-row: 2/2;
+      grid-column: 1/1;
+    }
+
+    .links_github {
+      justify-self: center;
+      align-self: center;
+      grid-row: 2/2;
+      grid-column: 2/2;
+    }
+
+    .guide {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-flow: row;
+      align-content: center;
+      justify-items: center;
+      gap: 10px;
+    }
+  }
+</style>
